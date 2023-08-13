@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <title>Sea Level and Weather Data</title>
+          <link rel="stylesheet" href="css/style.css">
+     </head>
+     <body>
+          <div>
+               <label>
+                    Select the city
+                    <select id="city-select"></select>
+               </label>
+          </div>
+          
+          <div>
+               <label>
+                    Select the weather attribute
+                    <select id="weather-attribute-select"></select>
+               </label>
+          </div>
+          
+          <div id="map-container">
+               <div>
+                    <input type="checkbox" class="checkbox" value="Cities" checked><label>Cities</label>
+                    <input type="checkbox" class="checkbox" value="Stations" unchecked><label>Stations</label>
+               </div>
+               <label>
+                    Enter the date
+                    <input type="date" class="date" id="myDate">
+               </label>
+               
+               <p></p> 
+               <svg id="map"></svg>
+          </div>
+          <div>
+               <p>LINE CHART GOES HERE</p>
+               <div id="line-chart-container"></div>
+          </div>
+          <div>
+               <p>SLIDER GOES HERE</p>
+          </div>
+          <script src="https://d3js.org/d3.v7.min.js"></script>
+          <script src="js/map.js"></script>
+          <!-- <script src="js/lineChart.js"></script> -->
+     </body>
+</html>
